@@ -1,13 +1,17 @@
 {
   "name": "@ayushmantripathy/db-mcp",
-  "module": "index.ts",
+  "version": "0.0.3",
+  "main": "./src/index.ts",
+  "bin": "./dist/index.js",
   "devDependencies": {
     "@types/bun": "latest"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --target bun --minify --outdir dist"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
-  "private": true,
   "type": "module",
   "dependencies": {
     "@cfworker/json-schema": "^4.1.1",

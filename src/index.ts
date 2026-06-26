@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import { McpServer, StdioServerTransport } from "@modelcontextprotocol/server";
 import { sql } from "bun";
 import * as z from "zod";
@@ -89,3 +91,4 @@ ORDER BY
 
 const transport = new StdioServerTransport();
 await server.connect(transport);
+

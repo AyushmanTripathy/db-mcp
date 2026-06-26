@@ -1,14 +1,10 @@
 {
   "mcpServers": {
     "db-mcp": {
-      "command": "bun",
+      "command": "bunx",
       "args": [
-        "run",
-        "/home/ayush/projects/db-mcp/index.ts"
-      ],
-      "env": {
-        "MY_SECRET_KEY": "your_api_key_here"
-      }
+        "@ayushmantripathy/db-mcp"
+      ]
     }
   }
 }
